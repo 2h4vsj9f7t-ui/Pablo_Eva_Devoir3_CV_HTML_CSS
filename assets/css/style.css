@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*1. Règles générales*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    color: #333333;
+    background-color: #e3e3e3;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*2. Header*/
+
+header {
+    width: 1160px;
+    margin: auto;
+    background-color: #17abb3;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.identite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.coordonnees {
+    margin-left: 400px;
+}
+
+.identite img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    object-fit: cover;
+    margin-left: 50px;
+}
+
+.coordonnees ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+
+.coordonnees h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.coordonnees h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.coordonnees a {
+    color: #ffffff;
+
+}
+
+/*3.Main*/
+
+main {
+    width: 1160px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+/*4.Colonnes du CV*/
+.contenu {
+    display: flex;
+}
+
+.colonne-gauche {
+    width: 35%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #e3e3e3;
+}
+
+.colonne-gauche li span:first-child {
+    font-weight: bold;
+}
+
+.colonne-gauche li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: normal;
+}
+
+.colonne-gauche h2 {
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 10px;
+}
+
+.colonne-gauche h2:nth-of-type(3)+ul li::before,
+.colonne-gauche h2:nth-of-type(4)+ul li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #17abb3;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+
+.colonne-gauche h2:nth-of-type(3)+ul li,
+.colonne-gauche h2:nth-of-type(4)+ul li {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 10px;
+}
+
+.colonne-droite {
+    width: 65%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*5.Rubriques du CV*/
+
+main h2 {
+    color: #17abb3;
+    font-size: 18px;
+    border-bottom: 2px solid #e3e3e3;
+    padding-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+article:hover {
+    background-color: #f5f5f5;
+    border-left: 3px solid #17abb3;
+}
+
+main ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+.etoiles {
+    color: #17abb3;
+    letter-spacing: 2px;
+}
+
+.colonne-gauche li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*6.Footer*/
+
+footer {
+    width: 1160px;
+    margin: auto;
+    background-color: #17abb3;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.colonne-droite p {
+    line-height: 1.2;
+    margin: 0;
+    text-indent: 20px;
+}
+
+footer a {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 12px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 0;
+}
